@@ -1,0 +1,142 @@
+
+ 
+ nav{
+
+   width: 100vw;
+   transition: 0s ease;
+ 
+ }
+ nav.nav-bar {
+    height: 50px;
+ }
+
+ nav ul {
+   display: flex;
+ }
+nav li {
+   list-style-type: none;
+   text-transform: uppercase;
+   left: calc(350px + 5%);
+   right: 0;
+   bottom: 0;
+   height: 50px;
+   text-align: center;
+   font-family: 'Raleway';
+   font-size: 25px;
+   letter-spacing: 4px;
+   font-weight: 200;
+   line-height: 45px;
+   margin: 0 2vw;
+   color: white;
+}
+nav a{
+
+   text-decoration: none;
+   color: white;
+ 
+ }
+ nav a:hover{
+
+   font-weight: 800;
+   font-family: 'Raleway';
+   font-size: 25px;
+ }
+
+
+ nav button{
+
+   display: none;
+ 
+ }
+ /*change the layout of the navigation bar for all the screens 
+
+that have a width less or equal than 500px*/
+
+
+
+@media only screen and (max-width: 500px) {
+
+   /*shows elements in a column*/
+ 
+   nav ul{
+ 
+     flex-direction: column;
+ 
+   }
+ 
+   
+ 
+   /* deletes margin on top or bottom of the a tag*/
+ 
+   nav li{
+ 
+     margin: 0;
+ 
+   }
+ 
+  /* makes sure that the a tag will take the entire screen*/
+ 
+   nav a{
+ 
+     display: block;
+ 
+   }
+
+   nav button{
+
+      /*makes the button visible*/
+  
+      display: block;
+  
+      
+  
+      /*since we are here, we can style it a little bit!*/
+  
+      padding: 2vw;
+  
+      font-size: 3vh;
+  
+      background-color: #AFE0FF;
+  
+      border: none;
+  
+      
+  
+      /*outline none removes the default blue border that appears anytime you click on the button*/
+  
+      outline: none;
+  
+      align-self: flex-start;
+  
+      cursor: pointer;
+  
+    }
+ 
+ }
+
+ 
+@media only screen and (max-width: 1000px) {
+
+ /*    Smaller Screens */
+
+    div.side-bar {
+      
+      position: absolute;
+      top: 50px;
+      left: 5%;
+      width: 35%;
+      background-color: #f7e0c1;
+      padding: 240px 25px 25px;
+    }
+    div.mugshot, div.logo {
+      height: 180px;
+      width: 180px; 
+    }
+    div.content-container {
+     
+      width: calc(60%);
+      padding: 20px 35px 45px;
+  }
+    
+ 
+ }

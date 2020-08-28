@@ -6,15 +6,20 @@
    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
    <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+   <script src="jquery-3.4.0.min.js"></script>
+
+
+   <link href='nav.css' rel='stylesheet' type='text/css'>
    <link href='cv.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-   <nav>
-      </ul>
+   <nav class="rela-block top-bar nav-bar">
+      <button> 🞬 </button>
+      <ul>
       <li> 
          <!-- link one -->
-         <a href="about.html"> About Me </a>
+         <a href="index.html"> About Me </a>
        </li>
 
        <li>
@@ -24,7 +29,7 @@
    
        <li>
          <!-- link three -->
-         <a href="cvt.html"> CV </a>
+         <a href="resume.html"> Resume </a>
        </li>
    
        <li>
@@ -211,5 +216,35 @@
    </div>
 
 </body>
+<script>
+   $(document).ready(function(){
 
+      /* function called when you click of the button */
+    
+      $("button").click(function(){
+    
+          
+    
+          /* this if else to change the text in the button */
+    
+          if($("button").text() == "☰"){
+    
+           $("button").text("🞬");
+    
+          }else{
+    
+            $("button").text("☰");
+    
+          }
+    
+        
+    
+        /* this function toggle the visibility of our "li" elements */
+    
+        $("li").toggle("slow");
+    
+      });
+    
+    });
+   </script>
 </html>
