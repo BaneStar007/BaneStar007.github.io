@@ -1,0 +1,17 @@
+About me page
+
+Projects Page, some more Projects
+Contacts Page to take out resume links
+
+Angular Index version - 
+
+component for: 
+- header
+- panel
+- panel links
+= panel dot points
+- Main Structure
+- paragraph Structure
+- Printable Hide Panels
+
+- Community/project stack
